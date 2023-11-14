@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page#2</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+    <script src="node app.js" defer></script>
+</head>
+<body>
+    <video class="video" autoplay loop muted>
+        <source src="Assets/formBack.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="terms">
+            <h2>Terms & Conditions</h2>
+            <p>
+                <ul>
+                <li>We offer web design and related services. Our services are described on our website.</li>
+                <li>Payment is required for our services. The pricing and payment details are available on our website. Payments are non-refundable except as otherwise specified.</li>
+                <li>All intellectual property rights associated with the web design and content created by us remain our property until full payment has been received.</li>
+                <li>The content and code created by us are protected by copyright laws. Any third-party assets used are subject to their respective licenses.</li>
+                <li>We will keep any client information and project details confidential and not share them with third parties.</li>
+                <li>We will provide estimated project timelines, but we are not responsible for delays caused by the client or external factors.</li>
+                <li>The client is responsible for reviewing and approving the work. Any changes or additional work may incur extra charges.</li>
+                <li>Either party may terminate the project for reasons outlined in the agreement. Termination will not relieve the client's obligation to pay for work done.</li>
+                <li>We are not liable for any damages or losses incurred as a result of using our services or website. Our liability is limited to the amount paid for our services.</li>
+                <li>We reserve the right to modify these terms and will notify users of any changes. Continued use of our services after changes indicates acceptance.</li>
+                <li>For questions or support, you can contact us at SF .</li>
+            </ul>
+        </p>
+        </div>
+        <div class="reqForm">
+            <h1>Contact Us</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name </label>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="description">Description </label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+                <div class="packs">
+                <span>Select a Plan</span>
+                <button class="starter">The Starter</button>
+                <button class="standerd">The Standerd</button>
+                <button class="Premeier">The Premeier</button>
+            </div>
+            <div class="termsCon">
+                <span>Terms & Conditions</span>
+                <p>By using our website and services, you agree to these terms and conditions. If you do not agree with them, please refrain from using our website.</p>
+            </div>
+            <input type="checkbox" id="terms" name="terms" required><br>
+                <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

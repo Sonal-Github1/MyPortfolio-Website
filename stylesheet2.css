@@ -1,0 +1,237 @@
+@import url(Assets/formBack.mp4);
+@import url("https://fonts.'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+
+:root {
+    --primary-color:#1d4ed8;
+    --background-color:#181818;
+    --text-color:#fff;
+    --secondry-color:#27272a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background-color);
+}
+
+video {
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.terms {
+    background-color: var(--secondry-color);
+    opacity: 0.7;
+    margin: 1rem;
+    width: 300px;
+    cursor: text;
+    padding: 2rem;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+h2 {
+    font-size: medium;
+    margin: 10px 8px 50px 8px;
+    font-family: poppins,sans-serif;
+    text-align: center;
+    color: var(--text-color);
+}
+
+ul {
+    font-size: 12px;
+    text-align: left;
+    font-family: poppins,sans-serif;
+    color: var(--text-color);
+}
+
+.reqForm {
+    background-color: var(--secondry-color);
+    opacity: 0.8;
+    position: relative;
+    margin: 1rem;
+    width: 1200px;
+    justify-content: center;
+    padding:2rem;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.reqForm h1 {
+    margin: 15px;
+    font-size: medium;
+    font-family: poppins,sans-serif;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.reqForm form {
+    margin: 30px 10px;
+    color: var(--text-color);
+    font-size: medium;
+    font-family: poppins,sans-serif;
+}
+
+.reqForm .btn {
+    margin-left: 50px;
+    width: 100px;
+    background-color: var(--text-color);
+    border-radius: 5px 20px 5px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: poppins,sans-serif;
+    color: var(--background-color);
+    padding: 10px 20px;
+}
+
+.reqForm .btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.reqForm label {
+    font-family: poppins, sans-serif;
+    margin: 50px;
+    text-align: left;
+}
+
+.reqForm input {
+    margin-left: 15px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: black;
+}
+
+.reqForm textarea {
+    border-radius: 5px;
+    margin: 0px 50px 5px 50px;
+    height: 200px;
+    width: 500px;
+    padding: 5px;
+    background-color: var(--text-color);
+    color: black;
+}
+
+.reqForm .packs span{
+    color: var(--text-color);
+    margin-left: 10px;
+}
+
+.reqForm .packs .starter {
+    background-color: var(--text-color);
+    font-family: poppins,sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 2px 4px 2px 7px;
+    border-radius: 10px;
+}
+
+.reqForm .packs .starter:hover{
+    background-color:#C0C0C0 ;
+    color: white;
+
+}
+
+.reqForm .packs .standerd{
+    background-color: var(--text-color);
+    font-family: poppins,sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 2px 4px;
+    border-radius: 10px;
+}
+
+.reqForm .packs .standerd:hover{
+    background-color:#CD7F32 ;
+    color: white;
+}
+
+.reqForm .packs .Premeier{
+    background-color: var(--text-color);
+    font-family: poppins,sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 2px 4px;
+    border-radius: 10px;
+}
+
+.reqForm .packs .Premeier:hover{
+    background-color:#8A2BE2 ;
+    color: white;
+}
+
+.reqForm .termsCon {
+    margin: 5px;
+    width: 100%;
+}
+
+.reqForm .termsCon span{
+    color: var(--text-color);
+    font-size: small;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.reqForm .termsCon p{
+    color: var(--text-color);
+    margin: 10px;
+    text-align: left;
+    font-size: smaller;
+    max-width: 90%;
+}
+
+#terms {
+    float: right;
+    position: absolute;
+    margin-top: -25px;
+}
+
+
+@media (width < 1500px){
+    video{
+        display: none;
+        transition: all 0.3s ease;
+    }  
+    .reqForm form{
+        max-width: 400px;
+    }
+    .reqForm Form textarea{
+        max-width: 400px;
+    }
+    #terms{
+        margin-left: 150px;
+    }
+}
+
+@media (width < 900px) {
+    .reqForm form{
+        max-width: 100px;
+    }
+    .reqForm Form textarea{
+        max-width: 200px;
+    }
+    .terms{
+        position: absolute;
+        max-width: 600px;
+        margin: 1300px 10px 10px 10px;
+    }
+    
+}
