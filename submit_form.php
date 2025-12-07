@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // --- Configuration ---
-    $to_email = "your_email@example.com"; // <-- REPLACE WITH YOUR EMAIL ADDRESS
+    $to_email = "fernandosonal40@gmail.com";
     $subject = "New Client Project Request from Website";
     
     // --- Sanitize and Collect Form Data ---
