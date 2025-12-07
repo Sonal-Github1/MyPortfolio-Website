@@ -81,5 +81,25 @@
             </form>
         </div>
     </div>
+    
+    <script>
+        // Function to check the URL parameter and select the corresponding radio button
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedPlan = urlParams.get('plan'); // Gets 'starter', 'standard', or 'premier'
+
+            if (selectedPlan) {
+                const radio = document.querySelector(`input[name="plan"][value="${selectedPlan}"]`);
+                if (radio) {
+                    radio.checked = true;
+                    // Optional: Visually highlight the selected button (using CSS classes)
+                    const label = radio.closest('.plan-btn');
+                    if (label) {
+                        label.classList.add('selected-via-url');
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>

@@ -404,7 +404,10 @@ body.night-theme .link a,
 body.night-theme header.container h1,
 body.night-theme section .header,
 body.night-theme footer .column h4,
-body.night-theme .copyright {
+body.night-theme .copyright,
+body.night-theme .features .card h4, /* Fix for feature card titles */
+body.night-theme .pricing .card h4, /* Fix for pricing card titles */
+body.night-theme .pricing .card h3 {  /* Fix for pricing card prices */
     color: #181818; /* Dark text */
 }
 
@@ -414,7 +417,9 @@ body.night-theme header.container p,
 body.night-theme .sub-header,
 body.night-theme footer .column p,
 body.night-theme footer .column > a,
-body.night-theme .features .card p {
+body.night-theme .features .card p,
+body.night-theme .pricing .card p, /* Fix for pricing card list items */
+body.night-theme .pricing .card p i { /* Fix for pricing card icons */
     color: #4a4a4a; /* Dark gray text */
 }
 
@@ -453,9 +458,11 @@ body.night-theme .pricing .card button:hover{
     border-color: #1e40af;
 }
 
-body.night-theme .pricing .card p i{
-    color: #4a4a4a; /* Darker icon color */
+body.night-theme header.container h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #181818; /* Dark stroke for day theme */
 }
+
 
 @media (width < 900px){
     .nav-links{

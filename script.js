@@ -16,7 +16,7 @@ const themeToggle = document.querySelector('.themeToggle');
 const body = document.body;
 const darkIcon = document.querySelector('.icon-light')
 const lightIcon = document.querySelector('.icon-dark')
-// Changed to select all pricing buttons by their new class 'join-btn'
+// Select all pricing buttons by their new class 'join-btn'
 const joinBtns = document.querySelectorAll('.join-btn'); 
 
 
@@ -48,13 +48,17 @@ themeToggle.addEventListener('click', ()=> {
     ? 'none':'block';
 });
 
+// The general 'Get Started' button does not select a plan
 getStarted.addEventListener('click',()=>{
     window.location.href = "page2.html";
 });
 
-// Fixed 'wimdow' typo and attached listener to all 'join-btn' elements
+// Listener for all 'Join now' buttons: redirects and passes plan via query parameter
 joinBtns.forEach(button => {
-    button.addEventListener('click',()=>{
-        window.location.href = "page2.html";
+    button.addEventListener('click',(event)=>{
+        // Get the value from the data-plan attribute (e.g., 'starter', 'standard', 'premier')
+        const plan = event.currentTarget.getAttribute('data-plan');
+        // Redirect to page2.html and append the plan as a URL query parameter
+        window.location.href = `page2.html?plan=${plan}`;
     });
 });
