@@ -1,4 +1,4 @@
-@import url("https://fonts.'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 *{
     padding: 0;
@@ -10,7 +10,7 @@
 
 :root{
     --primary-color: #fff;/*can add a varible with var()*/
-    
+
 }
 
 img{
@@ -207,7 +207,7 @@ section .header{
     font-size: 1.75rem;
     color: #fff;
     border-radius: 5px;
-} 
+}
 
 .features .card h4{
     margin-bottom: 0.5rem;
@@ -391,6 +391,70 @@ footer .column > a:hover{
     font-size: 0.8rem;
     text-align: center;
     opacity: 0.2;
+}
+
+/* --- Light Theme (Toggled by .night-theme class) --- */
+body.night-theme {
+    background-color: #fff; /* White background */
+}
+
+/* Light Theme: General Text/Links */
+body.night-theme .nav-links,
+body.night-theme .link a,
+body.night-theme header.container h1,
+body.night-theme section .header,
+body.night-theme footer .column h4,
+body.night-theme .copyright {
+    color: #181818; /* Dark text */
+}
+
+/* Light Theme: Subtle Text */
+body.night-theme header.container h4,
+body.night-theme header.container p,
+body.night-theme .sub-header,
+body.night-theme footer .column p,
+body.night-theme footer .column > a,
+body.night-theme .features .card p {
+    color: #4a4a4a; /* Dark gray text */
+}
+
+/* Light Theme: Card Backgrounds */
+body.night-theme .features .card,
+body.night-theme .pricing .card {
+    background-color: #f0f0f0; /* Light gray card background */
+    border-color: #ccc;
+}
+
+body.night-theme .features .card:hover,
+body.night-theme .pricing .card:hover {
+    background-color: #e0e0e0;
+    border-color: #1d4ed8;
+}
+
+/* Light Theme: Border/Separator Colors */
+body.night-theme .pricing .card h3 {
+    border-bottom: 2px dashed #4a4a4a; /* Darker dashed line */
+}
+
+/* Light Theme: Icon/Indicator Colors */
+body.night-theme .features .card span,
+body.night-theme .pricing .card button {
+    background-color: #1d4ed8; /* Keep blue button/icon background */
+    color: #fff;
+}
+
+/* Light Theme: Card Button Borders */
+body.night-theme .pricing .card button {
+    border: 2px solid #1d4ed8;
+}
+
+body.night-theme .pricing .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+body.night-theme .pricing .card p i{
+    color: #4a4a4a; /* Darker icon color */
 }
 
 @media (width < 900px){
